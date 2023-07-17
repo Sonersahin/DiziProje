@@ -1,0 +1,159 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Kullanici.master.cs" Inherits="DiziProje.Kullanici" %>
+
+<!--
+Author: W3layouts
+Author URL: http://w3layouts.com
+License: Creative Commons Attribution 3.0 Unported
+License URL: http://creativecommons.org/licenses/by/3.0/
+-->
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>Personal Blog a Blogging Category Flat Bootstarp  Responsive Website Template | Home :: w3layouts</title>
+    <link href="web/css/bootstrap.css" rel='stylesheet' type='text/css' />
+    <link href="web/css/style.css" rel='stylesheet' type='text/css' />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="keywords" content="Personal Blog Responsive web template, Bootstrap Web Templates, Flat Web Templates, Andriod Compatible web template, 
+	Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyErricsson, Motorola web design" />
+    <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+    <!----webfonts---->
+    <link href='http://fonts.googleapis.com/css?family=Oswald:100,400,300,700' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,300italic' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!----//webfonts---->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <!--end slider -->
+    <!--script-->
+    <script type="text/javascript" src="web/js/move-top.js"></script>
+    <script type="text/javascript" src="web/js/easing.js"></script>
+    <!--/script-->
+    <script type="text/javascript">
+        jQuery(document).ready(function ($) {
+            $(".scroll").click(function (event) {
+                event.preventDefault();
+                $('html,body').animate({ scrollTop: $(this.hash).offset().top }, 900);
+            });
+        });
+    </script>
+    <!---->
+
+</head>
+<body>
+    <!-- Önce jQuery kütüphanesini ekleyin -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <div class="header">
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="web/images/dizi-blog.png" title="" /></a>
+            </div>
+            <!---start-top-nav---->
+            <div class="top-menu">
+                <div class="search">
+                    <form>
+                        <input type="text" placeholder="" required="">
+                        <button type="submit"><i class="fas fa-search"></i></button>
+                    </form>
+                </div>
+                <ul>
+                    <li class="active"><a href="Default.aspx">Bloglar</a></li>
+                    <li><a href="Hakkimda.aspx">Hakkımızda</a></li>
+                    <li><a href="iletisim.aspx">İletişim</a></li>
+
+                    <div class="clearfix"></div>
+                </ul>
+            </div>
+            <div class="clearfix"></div>
+
+        </div>
+    </div>
+    <style>
+        /* Stil kodları */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .header {
+            background-color: #fff; /* Üst menüyü beyaz yapar */
+            color: #333; /* Yazıları koyu renkte yapar */
+            padding: 15px 0;
+        }
+
+        .logo img {
+            width: 120px;
+            height: auto;
+        }
+
+        .top-menu {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+            .top-menu ul {
+                list-style: none;
+                margin: 0;
+                padding: 0;
+                display: flex;
+            }
+
+                .top-menu ul li {
+                    margin: 0 10px;
+                }
+
+                    .top-menu ul li a {
+                        color: #333; /* Bağlantıları koyu renkte yapar */
+                        text-decoration: none;
+                        font-weight: bold;
+                    }
+
+            .top-menu .search {
+                display: flex;
+                align-items: center;
+            }
+
+                .top-menu .search form {
+                    display: flex;
+                    align-items: center;
+                }
+
+                    .top-menu .search form input[type="text"] {
+                        padding: 5px 10px;
+                        border: none;
+                        border-radius: 3px;
+                    }
+
+                    .top-menu .search form button {
+                        padding: 5px 10px;
+                        background-color: #555;
+                        color: #fff;
+                        border: none;
+                        border-radius: 3px;
+                        cursor: pointer;
+                    }
+    </style>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("span.menu").click(function () {
+                $(".top-menu ul").slideToggle("slow");
+            });
+        });
+    </script>
+    <!--/header-->
+    <div class="content">
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        </asp:ContentPlaceHolder>
+    </div>
+    <!---->
+    <div class="footer">
+        <div class="container">
+            <p>Copyrights © Dizi-Film Blog 2023 Tüm Hakları Saklıdır | Template by <a href="http://w3layouts.com/">W3layouts</a></p>
+        </div>
+    </div>
+
+</body>
+</html>
